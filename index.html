@@ -21,32 +21,88 @@
 
 <body data-bs-spy="scroll" data-bs-target="#nav-menu">
 
-    <!-- 네비게이션 영역 시작 -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-        <div class="container">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tailored Sports Consulting</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+         
 
-            <a class="gugi-font navbar-brand" href="#home">
-                <img src="images/logo.png" alt="로고">
-                코드덤</a>
+        <!-- 구글 폰트 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gaegu&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
-                aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+</head>
 
-            <div class="collapse navbar-collapse" id="nav-menu">
-                <ul class="navbar-nav ms-auto my-2">
-                    <li class="nav-item"><a class="nav-link" href="#home">홈</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about-chef">쉐프 소개</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">포트폴리오</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#service">서비스</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blog">블로그</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">연락처</a></li>
-                </ul>
-            </div>
+    <body>
+    <!-- 네비게이션 바 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#" data-toggle="modal" data-target="#aboutTSCModal">TSC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="consulting.html">Consulting</a></li>
+                <li class="nav-item"><a class="nav-link" href="#best-sports">Best Sports</a></li>
+                <li class="nav-item"><a class="nav-link" href="#best-sportswear">Best Sports Wear</a></li>
+                <li class="nav-item"><a class="nav-link" href="#membership">Membership</a></li>
+                <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Join</a></li>
+            </ul>
         </div>
     </nav>
-    <!-- 네비게이션 영역 끝 -->
+    
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+
+           <!-- TSC 소개 모달 -->
+<div class="modal fade" id="aboutTSCModal" tabindex="-1" role="dialog" aria-labelledby="aboutTSCModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="aboutTSCModalLabel">About TSC</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Tailored Sports Consulting 줄여서 TSC 입니다.
+                    </p>
+                    <P>
+                    요즘은 남녀노소, 연령에 상관없이 함께 즐길 수 있는 운동 프로그램이 늘어나고 있습니다.
+                    하지만 선택의 폭이 커진 만큼, 우리의 선택지도 기하급수적으로 많아졌습니다.
+                    이로 인해 고민하다가 주변의 권유나 무료 체험 한 번에 덜컥 등록하는 안타까운 선택을 하는 사람들이 많습니다.
+                </p>
+                <p>
+                    그래서 <strong>TSC</strong>는 맞춤 운동 컨설팅과 내 체형에 딱 맞는 프로그램을 찾을 수 있도록 도움을 준다.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+
+ 
+
 
 
 
